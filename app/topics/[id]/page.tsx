@@ -19,11 +19,11 @@ export default async function TopicPage({ params }: { params: Promise<{ id: stri
   return (
     <div className="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
       <Link 
-        href="/topics" 
+        href={`/topics?category=${topic.module}`} 
         className="inline-flex items-center text-blue-600 hover:text-blue-800 mb-8 font-medium"
       >
         <ArrowLeft className="h-4 w-4 mr-2" />
-        Back to Topics
+        Back to {topic.module === 'Programs' ? 'Programs' : 'Module Topics'}
       </Link>
       
       <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-8 md:p-12">
@@ -31,7 +31,7 @@ export default async function TopicPage({ params }: { params: Promise<{ id: stri
           {topic.title}
         </h1>
         
-        <div className="prose prose-slate prose-blue max-w-none prose-pre:bg-slate-900 prose-pre:text-slate-50 prose-headings:font-bold prose-a:text-blue-600 prose-h2:mt-16 prose-h2:mb-6 prose-h2:border-b prose-h2:border-slate-200 prose-h2:pb-4 prose-h3:mt-10 prose-h3:mb-4">
+        <div className="prose prose-slate prose-blue max-w-none prose-pre:bg-slate-900 prose-pre:text-slate-50 prose-pre:whitespace-pre-wrap prose-pre:break-words prose-pre:overflow-x-hidden prose-headings:font-bold prose-a:text-blue-600 prose-h2:mt-16 prose-h2:mb-6 prose-h2:border-b prose-h2:border-slate-200 prose-h2:pb-4 prose-h3:mt-10 prose-h3:mb-4">
           <ReactMarkdown remarkPlugins={[remarkGfm]}>
             {content}
           </ReactMarkdown>
