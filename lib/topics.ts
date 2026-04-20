@@ -21,8 +21,8 @@ export const topics: Topic[] = [
   { id: 'm2-enum-typedef', module: 'Module 2', title: '3. Enum & Typedef', description: 'Enumerated data types and typedef aliasing in C' },
 
   // Programs
-  { id: 'm1-programs-1', module: 'Programs', title: '1. Module 1 Programs (Part 1)', description: 'Sum, Area, User info, Positive/Negative/Zero, Greatest among 3, Odd/Even' },
-  { id: 'm1-programs-2', module: 'Programs', title: '2. Module 1 Programs (Part 2)', description: 'Factors, Prime, Sum of Digits, Asc/Desc printing, Armstrong, Fibonacci, Palindrome, etc.' },
+  { id: 'm1-programs-1', module: 'Programs', title: '1. C Fundamental Program 1', description: 'Sum, Area, User info, Positive/Negative/Zero, Greatest among 3, Odd/Even' },
+  { id: 'm1-programs-2', module: 'Programs', title: '2. C Fundamentals Program Number 2', description: 'Factors, Prime, Sum of Digits, Asc/Desc printing, Armstrong, Fibonacci, Palindrome, etc.' },
   { id: 'm2-programs-1', module: 'Programs', title: '3. Arrays & Matrices Programs', description: 'Sum/Avg, Bubble sort, Matrix operations (Addition, Multiplication, Transpose)' },
   { id: 'm2-programs-2', module: 'Programs', title: '4. Strings Programs', description: 'strcpy, strlen, strcat, strcmp, strchr, strstr, Palindromes, Vowels count' },
   { id: 'm2-programs-3', module: 'Programs', title: '5. Enum, Typedef & Operators', description: 'Enum variants, Typedef examples, Increment/Decrement operator expressions (25 examples)' },
