@@ -19,6 +19,9 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: 'Cimp - C Programming Guide',
   description: 'Comprehensive C programming guide covering KTU 2024 syllabus topics including storage classes, structures, memory allocation, file handling, and more.',
+  icons: {
+    icon: '/favicon.svg',
+  },
   openGraph: {
     title: 'Cimp - C Programming Guide',
     description: 'Comprehensive C programming guide covering KTU 2024 syllabus topics.',
