@@ -5,6 +5,7 @@ import remarkGfm from 'remark-gfm';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 import { getTopicContent } from '@/lib/content';
+import ScrollToTop from '@/components/ScrollToTop';
 
 export default async function TopicPage({ params }: { params: Promise<{ id: string }> }) {
   const resolvedParams = await params;
@@ -37,6 +38,7 @@ export default async function TopicPage({ params }: { params: Promise<{ id: stri
           </ReactMarkdown>
         </div>
       </div>
+      <ScrollToTop />
     </div>
   );
 }

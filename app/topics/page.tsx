@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { topics } from '@/lib/topics';
 import { BookOpen, ChevronRight, Code2, Layers, ArrowLeft, Database, Cpu, FileBox, FileText } from 'lucide-react';
 import SearchTopics from '@/components/SearchTopics';
+import ScrollToTop from '@/components/ScrollToTop';
 
 export default async function TopicsPage({ searchParams }: { searchParams: Promise<{ category?: string }> }) {
   const resolvedParams = await searchParams;
@@ -185,6 +186,7 @@ export default async function TopicsPage({ searchParams }: { searchParams: Promi
           </Link>
         ))}
       </div>
+      <ScrollToTop />
     </div>
   );
 }
