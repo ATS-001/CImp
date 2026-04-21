@@ -20,10 +20,10 @@ export default async function TopicPage({ params }: { params: Promise<{ id: stri
     <div className="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
       <Link 
         href={`/topics?category=${topic.module}`} 
-        className="inline-flex items-center text-blue-600 hover:text-blue-800 mb-8 font-medium"
+        className="inline-flex items-center px-4 py-2 bg-white border border-slate-200 rounded-xl text-slate-600 hover:text-blue-600 hover:border-blue-200 hover:bg-blue-50 transition-all font-medium text-sm shadow-sm mb-8 group"
       >
-        <ArrowLeft className="h-4 w-4 mr-2" />
-        Back to {topic.module === 'Programs' ? 'Programs' : 'Module Topics'}
+        <ArrowLeft className="h-4 w-4 mr-2 group-hover:-translate-x-1 transition-transform" />
+        Back to {topic.module === 'Programs' ? 'Programs' : topic.module === 'Question Papers' ? 'Papers' : 'Module Topics'}
       </Link>
       
       <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-8 md:p-12">

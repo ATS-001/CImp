@@ -3,6 +3,8 @@ import { Inter, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
+import GlobalLoading from '@/components/GlobalLoading';
+import { Suspense } from 'react';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -42,6 +44,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
       <body className="font-sans antialiased min-h-screen flex flex-col bg-slate-50 text-slate-900" suppressHydrationWarning>
+        <Suspense fallback={null}>
+          <GlobalLoading />
+        </Suspense>
         <Navbar />
         <main className="flex-grow">
           {children}

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Mail } from 'lucide-react';
+import { Mail, Github } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -10,13 +10,22 @@ export default function Footer() {
           <p className="text-sm mt-1">© SINCE 2023 | ATS-PDZ</p>
           <p className="text-sm mt-1">ALL RIGHTS RESERVED.</p>
         </div>
-        <div className="flex flex-col items-center md:items-end space-y-2">
+        <div className="flex flex-col items-center md:items-end space-y-3">
           <a 
             href="mailto:aaronsooraj001@gmail.com" 
             className="flex items-center space-x-2 hover:text-blue-400 transition-colors"
           >
             <Mail className="h-4 w-4" />
             <span>Contact Us</span>
+          </a>
+          <a 
+            href="https://github.com/ATS-001/CImp" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center space-x-2 hover:text-blue-400 transition-colors"
+          >
+            <Github className="h-4 w-4" />
+            <span>GitHub Repository</span>
           </a>
         </div>
       </div>

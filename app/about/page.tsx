@@ -1,4 +1,4 @@
-import { User, Linkedin, ExternalLink } from 'lucide-react';
+import { User, Linkedin, ExternalLink, Github } from 'lucide-react';
 
 export default function AboutPage() {
   return (
@@ -26,7 +26,7 @@ export default function AboutPage() {
             </p>
           </div>
           
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-wrap gap-4">
             <a 
               href="https://www.linkedin.com/in/aaronts127pdz/" 
               target="_blank" 
@@ -35,6 +35,15 @@ export default function AboutPage() {
             >
               <Linkedin className="h-5 w-5 mr-2" />
               Connect on LinkedIn
+            </a>
+            <a 
+              href="https://github.com/ATS-001/CImp" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-6 py-3 border border-slate-300 text-base font-medium rounded-md text-slate-700 bg-slate-100 hover:bg-slate-200 transition-colors"
+            >
+              <Github className="h-5 w-5 mr-2" />
+              GitHub Repository
             </a>
             <a 
               href="https://hexnicai.vercel.app/" 
