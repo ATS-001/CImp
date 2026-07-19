@@ -12,8 +12,6 @@ A modern, interactive study guide built to help students master **Programming in
 
 **Website:** https://your-vercel-link.vercel.app/
 
-> Replace the above URL with your deployed website.
-
 ---
 
 # 🚀 Features
