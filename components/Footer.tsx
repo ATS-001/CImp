@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="bg-slate-900 text-slate-400 py-8 border-t border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
         <div className="mb-4 md:mb-0 text-center md:text-left">
-          <p className="font-semibold text-slate-300">© 2026 HexnicAI || Part of ATS_PDZ</p>
+          <p className="font-semibold text-slate-300">© 2026 C-WATS || Part of ATS_PDZ</p>
           <p className="text-sm mt-1">© SINCE 2023 | ATS-PDZ</p>
           <p className="text-sm mt-1">ALL RIGHTS RESERVED.</p>
         </div>

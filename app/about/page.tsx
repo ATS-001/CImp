@@ -15,14 +15,14 @@ export default function AboutPage() {
           </div>
           
           <h1 className="text-3xl font-bold text-slate-900 mb-2">Aaron Thalakkottor Sooraj</h1>
-          <p className="text-lg text-slate-600 mb-6">Creator of Cimp & Part of HexnicAI</p>
+          <p className="text-lg text-slate-600 mb-6">Creator of Cimp & Part of C-WATS</p>
           
           <div className="prose prose-slate max-w-none mb-8">
             <p>
               Welcome to Cimp! This platform was created to provide a comprehensive and easy-to-understand guide for C programming, specifically tailored to the KTU 2024 syllabus.
             </p>
             <p>
-              Cimp is proudly a part of the <strong>HexnicAI</strong> ecosystem, dedicated to building intelligent and educational tools for students and developers.
+              Cimp is proudly a part of the <strong>C-WATS</strong> ecosystem, dedicated to building intelligent and educational tools for students and developers.
             </p>
           </div>
           
@@ -46,13 +46,13 @@ export default function AboutPage() {
               GitHub Repository
             </a>
             <a 
-              href="https://hexnicai.vercel.app/" 
+              href="https://c-wats.vercel.app/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-6 py-3 border border-slate-300 text-base font-medium rounded-md text-slate-700 bg-white hover:bg-slate-50 transition-colors"
             >
               <ExternalLink className="h-5 w-5 mr-2" />
-              Visit HexnicAI
+              Visit C-WATS
             </a>
           </div>
         </div>

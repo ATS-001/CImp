@@ -21,13 +21,13 @@ export default function Home() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
           <a 
-            href="https://hexnicai.vercel.app/" 
+            href="https://c-wats.vercel.app/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="flex items-center justify-center space-x-3 p-6 bg-white border border-slate-200 rounded-xl shadow-sm hover:shadow-md hover:border-blue-300 transition-all group"
           >
             <ExternalLink className="h-6 w-6 text-indigo-500 group-hover:text-indigo-600" />
-            <span className="font-bold not-italic text-slate-800 group-hover:text-indigo-600">HexnicAI</span>
+            <span className="font-bold not-italic text-slate-800 group-hover:text-indigo-600">C-WATS</span>
           </a>
 
           <Link 

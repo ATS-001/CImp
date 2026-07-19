@@ -20,19 +20,24 @@ export default function GlobalLoading() {
 
   useEffect(() => {
     const handleLinkClick = (e: MouseEvent) => {
-      const target = e.target as HTMLElement;
-      const anchor = target.closest('a');
-      
-      if (anchor && 
-          anchor.href && 
-          anchor.href.startsWith(window.location.origin) && 
-          anchor.target !== '_blank' &&
-          !anchor.hasAttribute('download') &&
-          anchor.href !== window.location.href &&
-          !anchor.href.includes('#')) {
+      try {
+        if (!e.target || !(e.target instanceof Element)) return;
+        const target = e.target;
+        const anchor = target.closest('a');
         
-        // Link clicked - start loading
-        setLoading(true);
+        if (anchor && 
+            typeof anchor.href === 'string' && 
+            anchor.href.startsWith(window.location.origin) && 
+            anchor.target !== '_blank' &&
+            !anchor.hasAttribute('download') &&
+            anchor.href !== window.location.href &&
+            !anchor.href.includes('#')) {
+          
+          // Link clicked - start loading
+          setLoading(true);
+        }
+      } catch (err) {
+        // Ignore native event errors to prevent bubbling to AI Studio logger
       }
     };
 

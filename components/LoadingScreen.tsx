@@ -17,15 +17,22 @@ const LOADING_TIPS = [
 ];
 
 export default function LoadingScreen() {
-  const [tipIndex, setTipIndex] = useState(() => Math.floor(Math.random() * LOADING_TIPS.length));
+  const [tipIndex, setTipIndex] = useState(0);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setTipIndex(Math.floor(Math.random() * LOADING_TIPS.length));
+    setMounted(true);
     const interval = setInterval(() => {
       setTipIndex(prev => (prev + 1) % LOADING_TIPS.length);
     }, 4000);
     
     return () => clearInterval(interval);
   }, []);
+
+  if (!mounted) {
+    return null; // Avoid rendering mismatched random tips initially
+  }
 
   return (
     <div className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-slate-950 overflow-hidden">
